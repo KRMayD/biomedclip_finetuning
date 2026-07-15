@@ -1,6 +1,89 @@
+# Python
 __pycache__/
 *.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# VSCode
+.vscode/
+
+# Experiments and outputs
+experiments_all/
 checkpoints/
-outputs/
-launch_logs/
-data/
+*.pt
+*.pth
+*.ckpt
+*.pkl
+
+# Logs
+logs/
+*.log
+runs/
+tensorboard/
+
+# Results
+results/
+*.csv
+*.txt
+!requirements.txt
+!README.md
+p2b
+dpo_pipeline_files
+dpo.md
+train_dpo.sh
+dpo_loss.py
+dpo_tumor_dataset.py
+debug
+experiments_10epoch
+experiments_cliprefine
+experiments_mgca
+clip-refine
+pruning
+tt_dpo.sh
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Data (exclude large datasets, retain source-only dataset loaders)
+data/*
+!data/
+!data/__init__.py
+!data/csv_caption_dataset.py
+!data/tumor_dataset.py
+*.lmdb
+*.png
+*.jpg
+*.jpeg
+*.npy
+*.npz
